@@ -1,0 +1,7 @@
+-works using python 2.7.9, dont know if you need it installed to run the app
+
+-you'll need to edit the serial settings and recompile to get it working with the lights
+
+-played around with some of the beat detect stuff for variace reasons and its not working as well at the moment. if it stops detecting the kicks, adjust the volume
+
+-have instructions for writing the scripts in "./bin/data/templateScenes.py"

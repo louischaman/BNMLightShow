@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lightShow" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="addons/;src/;build config/;addons/ofxXmlSettings/src/;addons/ofxXmlSettings/libs/;apps/lightingApps/lightShow/Inc/;src/ofBeatDetect/;src/lights/;inc/;inc/ofBeatDetect/;inc/lights/;addons/ofxPython/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/$(PROJECT_NAME)_debug" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/linux64/libopenFrameworksDebug.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+			</Target>
+			<Target title="Release">
+				<Option output="bin/$(PROJECT_NAME)" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin" />
+				<Option object_output="obj/Release/" />
+				<Option external_deps="../../../libs/openFrameworksCompiled/lib/linux64/libopenFrameworks.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+			</Target>
+		</Build>
+		<Unit filename="../../../addons/ofxPython/src/bindings/desktop/openFrameworks_wrap.cpp">
+			<Option virtualFolder="addons/ofxPython/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPython/src/bindings/openFrameworks_wrap.h">
+			<Option virtualFolder="addons/ofxPython/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPython/src/ofxPython.cpp">
+			<Option virtualFolder="addons/ofxPython/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxPython/src/ofxPython.h">
+			<Option virtualFolder="addons/ofxPython/" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxml.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxml.h">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/libs" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp">
+			<Option virtualFolder="addons/ofxXmlSettings/src" />
+		</Unit>
+		<Unit filename="../../../addons/ofxXmlSettings/src/ofxXmlSettings.h">
+			<Option virtualFolder="addons/ofxXmlSettings/src" />
+		</Unit>
+		<Unit filename="Inc/lightShowSerial.h">
+			<Option virtualFolder="inc/" />
+		</Unit>
+		<Unit filename="Inc/ofBaseLight.h">
+			<Option virtualFolder="inc/lights/" />
+		</Unit>
+		<Unit filename="Inc/ofBeatDetectChannel.h">
+			<Option virtualFolder="inc/ofBeatDetect/" />
+		</Unit>
+		<Unit filename="Inc/ofBeatDetectPlot.h">
+			<Option virtualFolder="inc/ofBeatDetect/" />
+		</Unit>
+		<Unit filename="Inc/ofColourLight.h">
+			<Option virtualFolder="inc/lights/" />
+		</Unit>
+		<Unit filename="Inc/ofFftOctaveBin.h">
+			<Option virtualFolder="inc/ofBeatDetect/" />
+		</Unit>
+		<Unit filename="Inc/ofGreyscaleLight.h">
+			<Option virtualFolder="inc/lights/" />
+		</Unit>
+		<Unit filename="Inc/ofLightChannel.h">
+			<Option virtualFolder="inc/lights/" />
+		</Unit>
+		<Unit filename="Inc/ofLightShowScene.h">
+			<Option virtualFolder="inc/" />
+		</Unit>
+		<Unit filename="Inc/ofToggleLight.h">
+			<Option virtualFolder="inc/lights/" />
+		</Unit>
+		<Unit filename="config.make">
+			<Option virtualFolder="build config" />
+		</Unit>
+		<Unit filename="src/lightShowSerial.cpp">
+			<Option virtualFolder="src/lights/" />
+		</Unit>
+		<Unit filename="src/main.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/ofApp.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/ofApp.h">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/ofBaseLight.cpp">
+			<Option virtualFolder="src/lights/" />
+		</Unit>
+		<Unit filename="src/ofBeatDetectChannel.cpp">
+			<Option virtualFolder="src/ofBeatDetect/" />
+		</Unit>
+		<Unit filename="src/ofBeatDetectPlot.cpp">
+			<Option virtualFolder="src/ofBeatDetect/" />
+		</Unit>
+		<Unit filename="src/ofFftOctaveBin.cpp">
+			<Option virtualFolder="src/ofBeatDetect/" />
+		</Unit>
+		<Unit filename="src/ofLightChannel.cpp">
+			<Option virtualFolder="src/lights/" />
+		</Unit>
+		<Unit filename="src/ofLightShowScene.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="src/lights/" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

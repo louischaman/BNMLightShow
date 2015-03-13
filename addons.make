@@ -1,0 +1,4 @@
+ofxXmlSettings
+ofxFft
+ofxUI
+ofxPython
