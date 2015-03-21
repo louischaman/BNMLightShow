@@ -34,15 +34,17 @@ class myScene(object):
 	# User setup here
 	def setup(self):
 		for i in range(self.nGLights):
-			self.gLightD[i] = 0.01
+			self.gLightD[i] = 0.05
 		for i in range(self.nCLights):
 			self.cLightD[i] = 0.2
 
 	# main light script goes in here
-	def loop(self, avgVol, var, beatFlag):
+	def loop(self, insVol, avgVol, var, beatFlag):
 		self.clearGreys()
 		self.clearColours()
 
+
+		
 		if beatFlag[1]:
 			self.tLightF[int(ofRandom(0, self.nTLights))] = True
 			self.flashGrey()
@@ -61,7 +63,7 @@ class myScene(object):
 	def flashGrey(self):
 		randomLight = int(ofRandom(0, self.nGLights))
 		self.gLightC[randomLight] = 2
-		self.gLightB[randomLight] = 1.0
+		self.gLightB[randomLight] = 0.5
 
 	def flashColour(self):
 		randomLight = int(ofRandom(0, self.nCLights))

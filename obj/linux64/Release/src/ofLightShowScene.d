@@ -139,11 +139,6 @@ obj/linux64/Release/src/ofLightShowScene.o: src/ofLightShowScene.cpp \
  ../../../libs/openFrameworks/app/ofAppBaseWindow.h \
  ../../../libs/openFrameworks/gl/ofGLProgrammableRenderer.h \
  ../../../libs/openFrameworks/graphics/ofCairoRenderer.h \
- /usr/include/cairo/cairo-features.h /usr/include/cairo/cairo-pdf.h \
- /usr/include/cairo/cairo.h /usr/include/cairo/cairo-version.h \
- /usr/include/cairo/cairo-features.h \
- /usr/include/cairo/cairo-deprecated.h /usr/include/cairo/cairo-svg.h \
- /usr/include/cairo/cairo.h \
  ../../../libs/openFrameworks/graphics/ofPath.h \
  ../../../libs/openFrameworks/graphics/ofTessellator.h \
  ../../../libs/openFrameworks/graphics/ofImage.h \
@@ -628,22 +623,6 @@ Inc/ofLightShowScene.h:
 ../../../libs/openFrameworks/gl/ofGLProgrammableRenderer.h:
 
 ../../../libs/openFrameworks/graphics/ofCairoRenderer.h:
-
-/usr/include/cairo/cairo-features.h:
-
-/usr/include/cairo/cairo-pdf.h:
-
-/usr/include/cairo/cairo.h:
-
-/usr/include/cairo/cairo-version.h:
-
-/usr/include/cairo/cairo-features.h:
-
-/usr/include/cairo/cairo-deprecated.h:
-
-/usr/include/cairo/cairo-svg.h:
-
-/usr/include/cairo/cairo.h:
 
 ../../../libs/openFrameworks/graphics/ofPath.h:
 

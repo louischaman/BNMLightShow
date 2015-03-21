@@ -16,9 +16,11 @@ class sceneLoad(object):
 	def setupBins(self, nBins):
 		self.nBins = nBins
 		self.avgVol = list(1.0 for i in range(nBins))
+		self.inBins = list(1.0 for i in range(nBins))
 		self.var = list(0.0 for i in range(nBins))
 		self.beatFlag = list(False for i in range(nBins))
 		
+		self.avgVol1 = list(1.0 for i in range(nBins))
 		
 	def setupLights(self, nTLights, nGLights, nCLights):
 		self.nTLights = nTLights
@@ -32,7 +34,7 @@ class sceneLoad(object):
 		self.curScene = self.scene.myScene(self.nBins, self.nTLights, self.nGLights, self.nCLights)
 	
 	def update(self):
-		self.curScene.loop(self.avgVol, self.var, self.beatFlag)
+		self.curScene.loop(self.inBins, self.avgVol, self.var, self.beatFlag)
 
 	def draw(self):
 		x = 0 #place holder. will break if removed
@@ -44,6 +46,9 @@ class sceneLoad(object):
 		
 	def setAvgLev(self, avgVol, pos):
 		self.avgVol[pos] = avgVol
+
+	def setInsLev(self, instVol, pos):
+		self.inBins[pos] = instVol
 	
 	def setVar(self, var, pos):
 		self.var[pos] = var

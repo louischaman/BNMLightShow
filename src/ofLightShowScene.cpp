@@ -77,6 +77,13 @@ void ofLightShowScene::setAvgLevels(vector<float> avgLevels){
     }
 }
 
+void ofLightShowScene::setInsLevels(vector<float> insLevels){
+    vector<float> input = insLevels;
+    if(scene){
+        setLevel("setInsLev", input);
+    }
+}
+
 void ofLightShowScene::setVariance(vector<float> variance){
     vector<float> input = variance;
     if(scene){

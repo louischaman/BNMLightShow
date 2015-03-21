@@ -45,7 +45,7 @@ class myScene(object):
 		self.bassHue = 0.0
 
 	# loop called once per ofx frame
-	def loop(self, avgVol, var, beatFlag):
+	def loop(self, insVol, avgVol, var, beatFlag):
 		snare = self.checkSnare(beatFlag)
 		newHue = 0.0
 		if beatFlag[1]:

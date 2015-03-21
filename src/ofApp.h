@@ -70,7 +70,7 @@ class ofApp : public ofBaseApp{
 
         // beat detect
         int noBins;
-        vector<float> inBins, avgWeights, sensitivityGrad, sensitivityOffset, beatCut, avgLevels;
+        vector<float> inBins, avgWeights, avgWeightsUser, sensitivityGrad, sensitivityOffset, beatCut, avgLevels, avgLevelsUser;
         vector<bool> beatFlag;
         vector<ofBeatDetectChannel *> beatDetect;
         ofBeatDetectPlot beatPlot;

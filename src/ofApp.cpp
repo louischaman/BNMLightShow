@@ -33,7 +33,7 @@ void ofApp::setup(){
         nColourLights = 6;
         float cDamping = 0.1;
 
-        string gLightComPort = " ";
+        string gLightComPort = "";
         string cLightComPort = "ttyACM0";
         int baudRate = 19200;
         int startChar = 'l';
@@ -83,7 +83,7 @@ void ofApp::setup(){
 
     // Setup sound input    MOVE THIS TO STATE 1 TO ALLOW CHANGING SOUNDCARD
     soundStream.listDevices();
-    soundStream.setDeviceID(4);
+    soundStream.setDeviceID(0);
     soundStream.setup(this, 0, 1, sampleRate, bufferSize, 4);
 }
 
@@ -99,6 +99,7 @@ void ofApp::update(){
 
     // update scene
     lightScene.setAvgLevels(avgLevels);
+    lightScene.setInsLevels(inBins);
     lightScene.setVariance(threshold);  // this needs changing
     lightScene.setBeatFlags(beatFlag);
     lightScene.resetTLights();
@@ -306,9 +307,9 @@ void ofApp::beatUpdate(){
 void ofApp::sendMessages(){
     // put light intensities into a vector
     vector<int> lightMessage;
-    for (int i = 0; i < nColourLights; i++){
-        vector<int> rgb = cLight[i]->output();
-        for (int j = 0; j < 3; j++) lightMessage.push_back(rgb[j]);
+    for (int i = 0; i < nGreyscaleLights; i++){
+        int bulbBrightness = gLight[i]->output();
+        lightMessage.push_back(bulbBrightness);
     }
 
     // send message

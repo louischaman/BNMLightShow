@@ -16,6 +16,7 @@ public:
     void resetTLights();
 
     void setAvgLevels(vector<float> avgLevels);
+    void setInsLevels(vector<float> avgLevels);
     void setVariance(vector<float> variance);
     void setBeatFlags(vector<bool> beatFlags);
 
